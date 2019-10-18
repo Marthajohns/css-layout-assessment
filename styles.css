@@ -8,6 +8,8 @@ body {
 img {
     max-width: 100%;
     display: block;
+    float: left;
+    margin: 10px 10px 10px 10px;
 }
 
 .logo {
@@ -21,30 +23,49 @@ img {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    
 }
 
 nav {
     background-color: #000;
     padding: 0.5em;
+    position: sticky;
+    
 }
 
 nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     padding: 0.5em 1em;
-}
+   }
+
+.grid, .photos{
+    display: flex;
+    justify-content: flex-start;
+
+    }
 
 .photos {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
 }
+
+
 
 .feature {
     width: 200px;
